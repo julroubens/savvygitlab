@@ -2,6 +2,6 @@
 
 #automate the push
 
-git -a *
+git add *
 git commit -m "Commit lab"
 git push
