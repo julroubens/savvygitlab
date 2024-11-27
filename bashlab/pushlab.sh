@@ -3,5 +3,7 @@
 #automate the push
 
 git add *
-git commit -m "Commit lab"
+#commit the changes
+git commit -m "Commit unit103lab6"
+#push the changes   
 git push
