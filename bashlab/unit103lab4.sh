@@ -20,6 +20,7 @@ function calcul() {
 
 calcul
 
+
 # echo "Enter the first number:"
 # read number1
 # echo "Enter the second number:"
