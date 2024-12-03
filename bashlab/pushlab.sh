@@ -4,6 +4,6 @@
 
 git add *
 #commit the changes
-git commit -m "Commit unit103lab6"
+git commit -m "Commit unit103lab7"
 #push the changes   
 git push
