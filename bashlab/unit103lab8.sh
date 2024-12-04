@@ -18,15 +18,12 @@ done
 # Stretch Goal:
 # Can you do this with an until loop to have it execute a specfic number of times?  
 
-echo -e "\nNow demonstrating fixed-count attack with until loop..."
-read -p "Enter number of ping attempts: " count
 
-attempts=0
-until [ $attempts -eq $count ]
+count=0
+until [ $count -eq 5 ]
 do
     ping -c 1 "$target_ip"
-    ((attempts++))
-    echo "Completed attempt $attempts of $count"
+    ((count++))
 done
 echo "Fixed-count attack completed"
 
