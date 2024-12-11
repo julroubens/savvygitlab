@@ -20,5 +20,5 @@ if [ $a -eq $b ] && [ $b -eq $c ]; then
 elif [ $a -eq $b ] || [ $b -eq $c ] || [ $a -eq $c ]; then
     echo "ISOSCELES"
 else
-    echo "SCALENE"
+    echo "SCALENE"509 40005sc175
 fi
