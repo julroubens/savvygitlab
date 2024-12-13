@@ -25,4 +25,29 @@ read -p "Please enter a number: " num
         echo "wrong number!"
         $test=false
     fi
+    
+    cd ~/Documents
+    echo "Files in Documents directory:"
+    ls
+
+    read -p "Would you like to create a new file or edit an existing one? (create/edit): " choice
+
+    case $choice in
+        "create"|"Create"|"CREATE")
+            read -p "Enter the name for your new file: " filename
+            nano "$filename"
+            ;;
+        "edit"|"Edit"|"EDIT")
+            read -p "Enter the name of the file to edit: " filename
+            if [ -f "$filename" ]; then
+                nano "$filename"
+            else
+                echo "File does not exist!"
+            fi
+            ;;
+        *)
+            echo "Invalid choice!"
+            ;;
+    esac
+
 
